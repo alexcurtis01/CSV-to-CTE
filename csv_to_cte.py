@@ -24,7 +24,7 @@ def csv_to_cte(file_path, cte_name):
     cte_query += ")"
 
     # Save the CTE query to txt file
-    with open("CTE.txt", 'w') as file:
+    with open(cte_name+".txt", 'w') as file:
         file.write(cte_query)
 
-csv_to_cte("MemberList.csv", "MemberList")
+csv_to_cte("MemberList2.csv", "MemberList")
